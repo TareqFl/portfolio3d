@@ -1,0 +1,15 @@
+#container{
+    position: absolute;
+    background-color: black;
+    z-index: 999;
+    top: 0;
+    left:0;
+    right: 0;
+    animation: fadeOut 12s ease-in-out forwards;
+}
+
+
+@keyframes fadeOut {
+    0%   {opacity:1;}
+    100%{opacity: 0; display: none;}
+}
