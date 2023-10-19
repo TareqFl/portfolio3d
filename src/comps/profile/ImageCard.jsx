@@ -8,6 +8,8 @@ import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import me from '../../assets/me.jpg';
 import { Stack } from '@mui/material';
+import { saveAs } from 'file-saver';
+import cv from '../../assets/cv.pdf';
 export default function UserCard() {
   const Row = ({ left, right }) => {
     return (
@@ -89,7 +91,11 @@ export default function UserCard() {
             </Stack>
           </Sheet>
           <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
-            <Button variant="outlined" color="primary">
+            <Button
+              variant="outlined"
+              color="primary"
+              onClick={() => saveAs(cv, 'Tareq-Flyfel')}
+            >
               Download CV
             </Button>
             <Button
