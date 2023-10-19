@@ -15,6 +15,7 @@ export default function UserCard() {
         direction={'row'}
         alignItems={'center'}
         justifyContent={'space-between'}
+        flexWrap={'wrap'}
       >
         <Typography>{left}</Typography>
         <Typography>{right}</Typography>

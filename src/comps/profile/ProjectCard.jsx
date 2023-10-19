@@ -70,7 +70,7 @@ export default function CardLayers3d() {
           }}
         >
           <AspectRatio
-            ratio="1"
+            // ratio="1"
             maxHeight={'100%'}
             sx={{
               minWidth: '100%',

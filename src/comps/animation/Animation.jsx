@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
-import config from '../particlesjs-config.json';
+import config from '../../particlesjs-config.json';
 
 const Animation = () => {
   const particlesInit = useCallback(async (engine) => {

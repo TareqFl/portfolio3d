@@ -1,5 +1,4 @@
 import { Suspense, useCallback, useMemo, useRef } from 'react';
-import './App.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import {
@@ -10,6 +9,7 @@ import {
   useThree,
 } from 'react-three-fiber';
 import circleImg from '../assets/circle.png';
+import './styles.scss';
 extend({ OrbitControls });
 
 function CameraControls() {

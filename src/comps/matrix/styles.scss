@@ -1,15 +1,16 @@
 #container{
-    position: absolute;
+    position: fixed;
     background-color: black;
-    z-index: 999;
+    z-index: 10;
     top: 0;
     left:0;
     right: 0;
-    animation: fadeOut 12s ease-in-out forwards;
+    bottom: 0;
+    animation: fadeOut 9s ease-in-out forwards;
 }
 
 
 @keyframes fadeOut {
     0%   {opacity:1;}
-    100%{opacity: 0; display: none;}
+    100%{opacity: 0; display: none; z-index: 0;}
 }
