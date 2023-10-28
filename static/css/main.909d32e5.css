@@ -1,2 +1,0 @@
-.anim{height:800px;width:100%;z-index:0}#container,.anim{position:fixed;top:0}#container{-webkit-animation:fadeOut 9s ease-in-out forwards;animation:fadeOut 9s ease-in-out forwards;background-color:#000;bottom:0;left:0;right:0;z-index:10}@-webkit-keyframes fadeOut{0%{opacity:1}to{display:none;opacity:0;z-index:0}}@keyframes fadeOut{0%{opacity:1}to{display:none;opacity:0;z-index:0}}body,html{background-color:#000;box-sizing:border-box;overflow-x:hidden;padding:0}h1,h2,h3,h4,h5,h6,p,span{color:#fff}
-/*# sourceMappingURL=main.909d32e5.css.map*/
