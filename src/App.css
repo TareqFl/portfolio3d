@@ -59,3 +59,22 @@ h1,h2,h3,h4,h5,h6,p,span{
 		height: 40px;
 	}
 }
+
+
+
+
+/* Hide both horizontal and vertical scroll bars */
+::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+  }
+	
+  /* For Firefox */
+  * {
+	scrollbar-width: none;
+  }
+  
+  /* For Edge */
+  * {
+	-ms-overflow-style: none;
+  }
+  
