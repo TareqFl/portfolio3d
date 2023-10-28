@@ -36,8 +36,15 @@ export default function CardLayers3d() {
       <Card
         variant="outlined"
         sx={{
-          minHeight: '280px',
-          width: 320,
+          minHeight: {
+            xs: '200px',
+            sm: '220px',
+            md: '280px',
+          },
+          width: {
+            xs: 220,
+            md: 320,
+          },
           backgroundColor: 'black',
           borderColor: 'white',
         }}

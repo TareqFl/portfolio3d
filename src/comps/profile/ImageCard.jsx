@@ -4,12 +4,13 @@ import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import Typography from '@mui/joy/Typography';
+import { Typography } from '@mui/material';
 import Sheet from '@mui/joy/Sheet';
 import me from '../../assets/me.jpg';
 import { Stack } from '@mui/material';
 import { saveAs } from 'file-saver';
 import cv from '../../assets/cv.pdf';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 export default function UserCard() {
   const Row = ({ left, right }) => {
     return (
@@ -17,10 +18,29 @@ export default function UserCard() {
         direction={'row'}
         alignItems={'center'}
         justifyContent={'space-between'}
-        flexWrap={'wrap'}
       >
-        <Typography>{left}</Typography>
-        <Typography>{right}</Typography>
+        <Typography
+          sx={{
+            fontSize: {
+              xs: '0.6rem',
+              sm: '0.7rem',
+              md: '1rem',
+            },
+          }}
+        >
+          {left}
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: {
+              xs: '0.6rem',
+              sm: '0.7rem',
+              md: '1rem',
+            },
+          }}
+        >
+          {right}
+        </Typography>
       </Stack>
     );
   };
@@ -30,7 +50,8 @@ export default function UserCard() {
       sx={{
         width: '100%',
         // position: 'relative',
-        overflow: { xs: 'auto', sm: 'initial' },
+        // overflow: { xs: 'auto', sm: 'initial' },
+        overflow: 'hidden',
       }}
     >
       <Card
@@ -45,39 +66,62 @@ export default function UserCard() {
           },
 
           overflow: 'auto',
-          resize: 'horizontal',
+          // resize: 'horizontal',
+          resize: 'none',
           bgcolor: 'transparent',
           border: 'none',
         }}
       >
         <AspectRatio
-          flex
+          flex={false}
           ratio="1"
           maxHeight={182}
-          sx={{ minWidth: 350, flexGrow: 1 }}
+          sx={{
+            minWidth: {
+              xs: '100%',
+              sm: 350,
+            },
+            flexGrow: 1,
+            // img: {
+            //   width: '100%',
+            // },
+          }}
         >
-          <img src={me} srcSet={me} loading="lazy" alt="" />
+          <img src={me} srcSet={me} loading="lazy" alt="me" />
         </AspectRatio>
         <CardContent>
-          <Typography level="body-xl" fontSize="xl" fontWeight="lg">
-            Tareq Fleyfel
-          </Typography>
-          <Typography level="body-md" fontWeight="lg" textColor="text.tertiary">
+          <Typography variant={'h4'}>Tareq Fleyfel</Typography>
+          <Typography variant="h6" fontSize={'1rem'}>
             Full Stack Software Developer
           </Typography>
           <Sheet
             sx={{
               bgcolor: 'transparent',
               borderRadius: 'sm',
-              p: 1.5,
+              p: 2,
               my: 1.5,
               display: 'flex',
-              gap: 2,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: {
+                xs: 1,
+                sm: 3,
+              },
               '& > div': { flex: 1 },
             }}
           >
             <div>
-              <Typography level="body-xl" fontWeight="lg">
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: {
+                    xs: '0.75rem',
+                    sm: '0.8rem',
+                    md: '0.95rem',
+                  },
+                }}
+              >
                 A skilled Javascript Software Developer with expertise in
                 various tools and technical developments to drive innovation and
                 improvement throughout an entire software development life
@@ -90,7 +134,20 @@ export default function UserCard() {
               <Row left={'Country'} right={'Lebanon'} />
             </Stack>
           </Sheet>
-          <Box sx={{ display: 'flex', gap: 1.5, '& > button': { flex: 1 } }}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 1.5,
+              alignItems: 'center',
+              svg: {
+                ':hover': {
+                  scale: '1.3',
+                },
+                transition: '.25s',
+              },
+            }}
+          >
             <Button
               variant="outlined"
               color="primary"
@@ -98,24 +155,26 @@ export default function UserCard() {
             >
               Download CV
             </Button>
-            <Button
-              variant="outlined"
-              color="primary"
+            <SiGithub
+              color="white"
+              size={'24px'}
               onClick={() => window.open('https://github.com/TareqFl')}
-            >
-              Github
-            </Button>
-            <Button
-              variant="outlined"
-              color="primary"
+              style={{
+                cursor: 'pointer',
+              }}
+            />
+            <SiLinkedin
+              color="#0370ae"
+              size={'24px'}
               onClick={() =>
                 window.open(
                   'https://www.linkedin.com/in/tareq-fleifel-809900107/'
                 )
               }
-            >
-              LinkedIn
-            </Button>
+              style={{
+                cursor: 'pointer',
+              }}
+            />
           </Box>
         </CardContent>
       </Card>
