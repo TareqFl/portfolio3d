@@ -16,7 +16,7 @@ import { TbBrandNodejs, TbBrandReactNative } from 'react-icons/tb';
 const Skills = () => {
   return (
     <Box>
-      <Typography textAlign={'start'} variant="h4" fontWeight={'bold'}>
+      <Typography textAlign={'start'} variant="h5" fontWeight={'bold'}>
         Skills
       </Typography>
       <Stack
@@ -25,7 +25,22 @@ const Skills = () => {
         alignItems={'center'}
         justifyContent={'center'}
         gap={2}
-        sx={{ svg: { fontSize: '64px', display: 'block' } }}
+        sx={{
+          cursor: 'pointer',
+          mt: 5,
+          mb: 5,
+          svg: {
+            fontSize: {
+              xs: '32px',
+              md: '64px',
+            },
+            display: 'block',
+            ':hover': {
+              scale: '1.2',
+            },
+            transition: '.35s',
+          },
+        }}
       >
         <SiJavascript color="yellow" />
         <Box
@@ -33,6 +48,10 @@ const Skills = () => {
             backgroundColor: 'white',
             borderRadius: 1,
             overflow: 'hidden',
+            ':hover': {
+              scale: '1.2',
+            },
+            transition: '.35s',
           }}
         >
           <SiTypescript color="blue" />

@@ -11,7 +11,29 @@ const App = () => {
       <Animation />
       <Matrix />
       <Particles />
-      <Box sx={{ position: 'relative', paddingTop: '850px' }}>
+
+      <Box
+        sx={{
+          position: 'relative',
+          marginTop: {
+            xs: '1000px',
+            sm: '1100px',
+            md: '1150px',
+            lg: '1100px',
+          },
+        }}
+      >
+        <Box
+          sx={{
+            position: 'absolute',
+            left: '50%',
+            top: {
+              xs: '-8%',
+              sm: '-15%',
+            },
+          }}
+          className="arrow"
+        ></Box>
         <Container>
           <ProfileContainer />
         </Container>

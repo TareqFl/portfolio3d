@@ -5,7 +5,8 @@ import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import { AspectRatio } from '@mui/joy';
-
+import { Bars } from 'react-loader-spinner';
+import { Stack } from '@mui/material';
 export default function CardLayers3d() {
   return (
     <Box
@@ -49,9 +50,18 @@ export default function CardLayers3d() {
           borderColor: 'white',
         }}
       >
-        <Typography level="h2" fontSize="lg" textColor="white">
-          React-Studio-JS
-        </Typography>
+        <Stack direction={'row'} alignItems={'center'} gap={1}>
+          <Bars
+            height="18"
+            width="18"
+            color="#9c27b0"
+            ariaLabel="bars-loading"
+            visible={true}
+          />
+          <Typography level="h2" fontSize="lg" textColor="white">
+            React-Studio-JS
+          </Typography>
+        </Stack>
         <CardCover
           sx={{
             background:

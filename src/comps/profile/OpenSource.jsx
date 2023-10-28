@@ -1,7 +1,8 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import OpenSourceText from './OpenSourceText';
+import { Bars } from 'react-loader-spinner';
 const OpenSource = () => {
   const features = [
     'TypeScript support',
@@ -57,6 +58,38 @@ const OpenSource = () => {
           })}
         </Stack>
       </Box>
+      <Stack>
+        <Button
+          sx={{ gap: 1 }}
+          onClick={() =>
+            window.open('https://react-studio-js-next.vercel.app/')
+          }
+        >
+          <Bars
+            height="18"
+            width="18"
+            color="#9c27b0"
+            ariaLabel="bars-loading"
+            visible={true}
+          />
+          <Typography>React-Studio-JS NextJS + TS Demo</Typography>
+        </Button>
+        <Button
+          sx={{ gap: 1 }}
+          onClick={() =>
+            window.open('https://react-studio-js-example.vercel.app/')
+          }
+        >
+          <Bars
+            height="18"
+            width="18"
+            color="#9c27b0"
+            ariaLabel="bars-loading"
+            visible={true}
+          />
+          <Typography>React-Studio-JS-example React-Vite Demo</Typography>
+        </Button>
+      </Stack>
     </Stack>
   );
 };
