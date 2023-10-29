@@ -72,10 +72,21 @@ const OpenSource = () => {
             ariaLabel="bars-loading"
             visible={true}
           />
-          <Typography>React-Studio-JS NextJS + TS Demo</Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: {
+                xs: '0.6rem',
+                sm: '1rem',
+                md: '1.3rem',
+              },
+            }}
+          >
+            React-Studio-JS NextJS + TS Demo
+          </Typography>
         </Button>
         <Button
-          sx={{ gap: 1 }}
+          sx={{ gap: 1, alignItems: 'center' }}
           onClick={() =>
             window.open('https://react-studio-js-example.vercel.app/')
           }
@@ -87,7 +98,18 @@ const OpenSource = () => {
             ariaLabel="bars-loading"
             visible={true}
           />
-          <Typography>React-Studio-JS-example React-Vite Demo</Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: {
+                xs: '0.6rem',
+                sm: '1rem',
+                md: '1.3rem',
+              },
+            }}
+          >
+            React-Studio-JS-example React-Vite Demo
+          </Typography>
         </Button>
       </Stack>
     </Stack>
