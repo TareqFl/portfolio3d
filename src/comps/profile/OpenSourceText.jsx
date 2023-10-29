@@ -1,9 +1,17 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import { Reveal } from 'react-reveal';
 import { TypeAnimation } from 'react-type-animation';
 const OpenSourceText = () => {
   return (
-    <div>
+    <Box
+      sx={{
+        fontSize: {
+          xs: '0.4rem',
+          sm: '0.8rem',
+        },
+      }}
+    >
       <Reveal>
         <TypeAnimation
           sequence={[
@@ -29,7 +37,7 @@ const OpenSourceText = () => {
           repeat={Infinity}
         />
       </Reveal>
-    </div>
+    </Box>
   );
 };
 
