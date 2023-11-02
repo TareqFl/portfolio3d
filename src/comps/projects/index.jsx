@@ -13,7 +13,7 @@ import ProjectCard from './ProjectCard';
 import { TbBrandNodejs, TbBrandSocketIo } from 'react-icons/tb';
 const index = () => {
   return (
-    <Box display={'flex'} flexDirection={'column'} gap={4}>
+    <Box display={'flex'} flexDirection={'column'} gap={4} mb={4}>
       <Typography textAlign={'start'} variant="h5" fontWeight={'bold'}>
         Sample Projects
       </Typography>
@@ -44,6 +44,7 @@ const index = () => {
               <TbBrandSocketIo color="white" size={24} />
             </Stack>
           }
+          link={'https://github.com/TareqFl/ChatsyChat'}
         />
         <ProjectCard
           title={'Api Server'}

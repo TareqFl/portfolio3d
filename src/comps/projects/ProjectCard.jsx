@@ -15,6 +15,7 @@ export default function BioCard({ icon, discription, link, title, stacks }) {
         sx={{
           boxShadow: 'lg',
           backgroundColor: 'transparent',
+          height: '250px',
         }}
       >
         <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
