@@ -57,6 +57,7 @@ const index = () => {
               <TbJson size={24} color='purple' />
               <SiMongodb size={24} color='green' />
               <SiJsonwebtokens size={24} color='white' />
+              <SiTypescript color='blue' size={24} />
             </Stack>
           }
           link={'https://github.com/TareqFl/ApiServer.git'}
