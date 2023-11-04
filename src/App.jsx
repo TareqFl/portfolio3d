@@ -20,8 +20,7 @@ const App = () => {
             sm: '1100px',
             md: '1150px',
           },
-        }}
-      >
+        }}>
         <Box
           sx={{
             position: 'absolute',
@@ -31,8 +30,7 @@ const App = () => {
               sm: '-15%',
             },
           }}
-          className="arrow"
-        ></Box>
+          className='arrow'></Box>
         <Container>
           <ProfileContainer />
         </Container>
