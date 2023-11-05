@@ -1,17 +1,25 @@
 import { Box, Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
-import { BsChatSquareDots, BsServer, BsSoundwave } from 'react-icons/bs';
+import {
+  BsChatSquareDots,
+  BsImage,
+  BsServer,
+  BsSoundwave,
+} from 'react-icons/bs';
 import {
   SiJavascript,
   SiJsonwebtokens,
   SiMongodb,
+  SiMui,
   SiNextdotjs,
   SiReact,
+  SiStyledcomponents,
   SiTypescript,
 } from 'react-icons/si';
 import { IoGameControllerOutline } from 'react-icons/io5';
 import ProjectCard from './ProjectCard';
 import { TbBrandNodejs, TbBrandSocketIo, TbJson } from 'react-icons/tb';
+import giphy from '../../assets/giphy.gif';
 const index = () => {
   return (
     <Box display={'flex'} flexDirection={'column'} gap={4} mb={4}>
@@ -64,9 +72,29 @@ const index = () => {
         />
         <ProjectCard
           title={'ConquerBlitz'}
-          icon={
-            <IoGameControllerOutline size={48} fill='white' color='white' />
+          img={
+            'https://raw.githubusercontent.com/TareqFl/portfolio/gh-pages/static/media/blitza.68c5d7c71f2757f01214.png?token=GHSAT0AAAAAACI567UMZ7ITWDKGOJPYHVZCZKH75EQ'
           }
+          icon2={
+            <IoGameControllerOutline size={22} fill='white' color='white' />
+          }
+          button={'Link'}
+          st={{
+            overflow: 'hidden',
+            height: 75,
+            width: 75,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            img: {
+              height: '100%',
+              // width: '100%',
+              scale: '2',
+              position: 'relative',
+              right: 5,
+              bottom: 5,
+            },
+          }}
           discription={'A PVP game written in JS'}
           stacks={
             <Stack direction={'row'} gap={1} mt={1}>
@@ -74,7 +102,36 @@ const index = () => {
               <SiJavascript color='yellow' size={24} />
             </Stack>
           }
-          link={'https://github.com/TareqFl/ConquerBlitz'}
+          link={'https://TareqFl.github.io/ConquerBlitz'}
+        />
+        <ProjectCard
+          title={'Sun & Cloud'}
+          discription={'Css animation written in JS'}
+          img={giphy}
+          stacks={
+            <Stack direction={'row'} gap={1} mt={1}>
+              <SiMui color='blue' size={24} />
+              <SiStyledcomponents color='white' size={24} />
+            </Stack>
+          }
+          link={'https://tareqfl.github.io/SunCloudAnimation/'}
+          button={'Link'}
+          st={{
+            overflow: 'hidden',
+            height: 75,
+            width: 75,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            img: {
+              height: '100%',
+              // width: '100%',
+              scale: '2',
+              position: 'relative',
+              right: 5,
+              bottom: 5,
+            },
+          }}
         />
       </Grid>
     </Box>
