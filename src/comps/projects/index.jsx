@@ -20,6 +20,7 @@ import { IoGameControllerOutline } from 'react-icons/io5';
 import ProjectCard from './ProjectCard';
 import { TbBrandNodejs, TbBrandSocketIo, TbJson } from 'react-icons/tb';
 import giphy from '../../assets/giphy.gif';
+import blitz from '../../assets/blitz.png';
 const index = () => {
   return (
     <Box display={'flex'} flexDirection={'column'} gap={4} mb={4}>
@@ -72,9 +73,7 @@ const index = () => {
         />
         <ProjectCard
           title={'ConquerBlitz'}
-          img={
-            'https://raw.githubusercontent.com/TareqFl/portfolio/gh-pages/static/media/blitza.68c5d7c71f2757f01214.png?token=GHSAT0AAAAAACI567UNOW5CAVTLEBB4MPG2ZKIAFDA'
-          }
+          img={blitz}
           icon2={
             <IoGameControllerOutline size={22} fill='white' color='white' />
           }
