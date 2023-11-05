@@ -73,7 +73,7 @@ const index = () => {
         <ProjectCard
           title={'ConquerBlitz'}
           img={
-            'https://raw.githubusercontent.com/TareqFl/portfolio/gh-pages/static/media/blitza.68c5d7c71f2757f01214.png?token=GHSAT0AAAAAACI567UMZ7ITWDKGOJPYHVZCZKH75EQ'
+            'https://raw.githubusercontent.com/TareqFl/portfolio/gh-pages/static/media/blitza.68c5d7c71f2757f01214.png?token=GHSAT0AAAAAACI567UNOW5CAVTLEBB4MPG2ZKIAFDA'
           }
           icon2={
             <IoGameControllerOutline size={22} fill='white' color='white' />
