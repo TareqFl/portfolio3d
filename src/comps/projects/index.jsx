@@ -101,7 +101,7 @@ const index = () => {
               <SiJavascript color='yellow' size={24} />
             </Stack>
           }
-          link={'https://TareqFl.github.io/ConquerBlitz'}
+          link={'https://conquer-blitz.vercel.app/'}
         />
         <ProjectCard
           title={'Sun & Cloud'}
